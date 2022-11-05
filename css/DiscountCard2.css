@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap");
+/* @import "../breakpoints"; */
+.disc-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+}
+
+.disc-card .grid-wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 1fr 1fr 1fr;
+}
+
+.disc-card .grid-wrapper .item-3 {
+  display: none;
+}
+
+.disc-card .card img {
+  width: 160px;
+  height: 132px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.disc-card .card {
+  max-width: 400px;
+  border: 1px solid black !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.disc-card .card-body {
+  width: 350px;
+  margin-left: 30px;
+  margin-top: -0.5rem;
+}
+
+.disc-card .card-body h4 {
+  font-size: 2.925rem;
+  font-weight: 800;
+}
+
+.disc-card .card-body h5 {
+  font-size: 0.825rem;
+}
+
+.disc-card .card-body .text-theme {
+  color: #FF7373;
+}
+
+.disc-card .card-body .price {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.disc-card .card .card-menu {
+  position: absolute;
+  width: 50px;
+  z-index: 1;
+  margin-top: 0rem;
+  overflow: hidden;
+  left: 90px;
+  top: -5%;
+  right: 1rem;
+  list-style: none;
+  /* center aligining the menu tested in edge, opera, safari */
+  padding: 0.85rem;
+  font-size: 1.25rem;
+  border-radius: var(--border-radius-medium);
+  /*   background-color: var(--color-white); */
+  -webkit-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
+}
+
+.disc-card .card:hover .card-menu {
+  display: block;
+  left: 90px;
+  width: 100px;
+}
+
+.disc-card .card-menu .productButton {
+  position: relative;
+  background-color: #fff;
+  color: black;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  vertical-align: middle;
+  font-size: 1rem;
+  text-align: center;
+  border: none !important;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.06);
+}
+
+.disc-card .card-menu .productButton:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 1600px) {
+  .disc-card .grid-wrapper .item-3 {
+    display: grid;
+  }
+  .disc-card .card .card-menu {
+    left: -9000%;
+  }
+}/*# sourceMappingURL=DiscountCard2.css.map */
