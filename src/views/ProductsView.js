@@ -4,10 +4,17 @@ import Footer from '../components/Footer'
 import ProductGridSection from '../components/sections/ProductGridSection'
 import BreadCrumbsSections from '../components/sections/BreadCrumbsSections'
 import {ProductsContext} from '../components/contexts/contexts'
+import { useProductContext } from '../components/contexts/ProductContext'
 
 export const ProductsView = ({title }) => {
+
+  const {products, getProducts} = useProductContext()
+
+  useEffect(() => {
+    getProducts()
+  },[])
   
-  const productContext = useContext(ProductsContext)
+/*   const productContext = useContext(ProductsContext)
 
   const [thisProduct, SetThisProduct] = useState({})
 
@@ -18,7 +25,7 @@ export const ProductsView = ({title }) => {
     }
     fetchData()
 }, [])
-
+ */
   return (
     <div>
     <NavbarGlobal />
@@ -30,7 +37,7 @@ export const ProductsView = ({title }) => {
 
 
           
-           <ProductGridSection title="Products" items={productContext} /> 
+           <ProductGridSection title="Products" items={products} /> 
 
            
         

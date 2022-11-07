@@ -3,35 +3,36 @@ import { useParams } from 'react-router-dom'
 import { ProductDetailsImages } from './ProductDetailsImages'
 import { QuantityButton } from './QuantityButton'
 import { DetailInfoProduct } from './DetailInfoProduct'
-import { useContext, useState, useEffect } from 'react';
-import {ProductContext} from './contexts/contexts'
+import { useEffect } from 'react';
+import { useProductContext } from './contexts/ProductContext'
+import { useShoppingCart } from './contexts/ShoppingCartContext'
+import { currencyFormatter } from './utilities/currencyFormatter'
 
 
 
 
-export const ProductDetailsInfoGrid = ({title, items = []}) => {
-
-   
-
+export const ProductDetailsInfoGrid = ({count}) => {
     const {id} = useParams()
-   const [thisProduct, SetThisProduct] = useState({})
+   const {incrementQuantity } = useShoppingCart() 
+   
+  
+
+  
+
+    const {product, getProduct} = useProductContext()
+  const {featuredProducts, getFeaturedProducts} = useProductContext();
+    useEffect(() => {
+        getProduct(id)
+        getFeaturedProducts(4)
+    },[id],[])
 
 
- 
-     useEffect(() => {
-        const fetchData = async () => {
-            const result = await fetch(`https://win22-webapi.azurewebsites.net/api/products/${id}`)
-            
-          SetThisProduct(await result.json())
-        }
-    
-        fetchData()
-    }, [id], [])
- 
-      
+
     
       let currentPage = "Product Details"
-      window.top.document.title = `${thisProduct.name} || Fixxo` 
+      window.top.document.title = `${product.name} || Fixxo` 
+
+
   return (
     <section className="product-detail-section">
     <div className="container">
@@ -48,7 +49,7 @@ export const ProductDetailsInfoGrid = ({title, items = []}) => {
 
         <div className="product-detail-description">
            <div className="prod-desc-1">
-            <h2>{thisProduct.name}</h2>
+            <h2>{product.name}</h2>
          
             <p><small>SKU: 12345670 BRAND: The Northland</small></p>
             <div className="text-theme">
@@ -58,7 +59,7 @@ export const ProductDetailsInfoGrid = ({title, items = []}) => {
                 <i className="fa-sharp fa-solid fa-star"></i>
                 <i className="fa-sharp fa-solid fa-star"></i>
               </div>  
-              <h3>€{thisProduct.price}</h3>
+              <h3>{currencyFormatter(product.price)}</h3>
               <p>Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an. Use off agreeable law unwilling sir deficient curiosity instantly. (read more) </p>
            </div>
            <div className="prod-desc-2">
@@ -101,12 +102,15 @@ export const ProductDetailsInfoGrid = ({title, items = []}) => {
                     <h2>Qty: </h2>
                     <div className="center">
                    
+                   {/* did not have time to get this to work when adding to cart */}
                         <QuantityButton />
+
+                        
                      </div> 
   
                      
                 </div>
-                <div className="cart-red-buttons "><button type="submit"  className="post-button">Add To Cart</button>
+                <div className="cart-red-buttons "><button   onClick={() => incrementQuantity({articleNumber: product.articleNumber, product: product}  )} className="post-button">Add To Cart</button>
                     </div> 
             </div>
        
@@ -131,6 +135,7 @@ export const ProductDetailsInfoGrid = ({title, items = []}) => {
     </div>
 
     <DetailInfoProduct />
+
   
 </section>
   )

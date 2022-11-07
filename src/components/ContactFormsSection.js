@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { submitData, validate } from './scrips/submitAndValidation'
-function ContactFormsSection2() {
+function ContactFormsSection() {
 
     let currentPage = "Contact Us"
     window.top.document.title = `${currentPage} || Fixxo` 
@@ -163,4 +163,4 @@ function ContactFormsSection2() {
 
 }
 
-export default ContactFormsSection2
+export default ContactFormsSection

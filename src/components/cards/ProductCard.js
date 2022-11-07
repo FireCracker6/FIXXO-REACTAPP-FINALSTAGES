@@ -2,18 +2,20 @@ import React from 'react'
 
 
 import { NavLink } from 'react-router-dom'
+import { useShoppingCart } from '../contexts/ShoppingCartContext'
+import { currencyFormatter } from '../utilities/currencyFormatter'
 
-const RelatedProductsCard = ({item}) => {
+const ProductCard = ({item}) => {
 
-  const addToWishList = (e) => {
+
+  const {incrementQuantity } = useShoppingCart()
+ 
+   const addToWishList = (e) => {
     console.log(`added to wish list)`)
   }
 
   const addToCompare = (e) => {
     console.log("added to compare")
-  }
-  const addToCart = (e) => {
-    console.log("added to Cart")
   }
 
   return (
@@ -29,7 +31,7 @@ const RelatedProductsCard = ({item}) => {
                   <li><button onClick={addToWishList} className='productButton'><i className="fa-light fa-heart "></i></button></li>
                
                       <li><button  onClick={addToCompare} className='productButton' ><i className="fa-light fa-code-compare fa-flip-vertical"></i></button></li>
-                      <li><button onClick={addToCart}  className='productButton'><i className="fa-light fa-bag-shopping"></i></button></li>
+                      <li><button onClick={() => incrementQuantity({articleNumber: item.articleNumber, product: item})}  className='productButton'><i className="fa-light fa-bag-shopping"></i></button></li>
                   </ul>
               
                <div className="quickview-buttons"> <NavLink  to={`/productdetails/${item.articleNumber}`} className="quickview-button quick-btn-border">QUICK VIEW</NavLink>
@@ -49,7 +51,7 @@ const RelatedProductsCard = ({item}) => {
                         </div>
                     <div className="price">
                       <p className="old-price">$35.00</p>
-                      <p className="new-price">€ {item.price} </p>
+                      <p className="new-price"> {currencyFormatter(item.price)} </p>
                   </div>
               </div>  
              
@@ -63,4 +65,4 @@ const RelatedProductsCard = ({item}) => {
   )
 }
 
-export default RelatedProductsCard
+export default ProductCard

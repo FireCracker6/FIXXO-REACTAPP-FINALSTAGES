@@ -1,6 +1,7 @@
 import React from 'react'
 import WhiteButton from './WhiteButton'
-import ProductCard2 from './ProductCard2'
+import ProductCard from './cards/ProductCard'
+import MobileGridCard from './cards/MobileGridCard'
 
 const SpecialOffer2 = ({items = []}) => {
 
@@ -22,7 +23,7 @@ const SpecialOffer2 = ({items = []}) => {
           <div className="container--md">
                   <div className="item-2">
                   <h2>2 FOR USD $29</h2>
-                  <WhiteButton link="/productdetails" text="SHOP NOW!"  />  
+                  <WhiteButton link="/products" text="SHOP NOW!"  />  
                   </div>
                   </div>
             
@@ -35,11 +36,11 @@ const SpecialOffer2 = ({items = []}) => {
                         <div className="container">
                         <div className="row row-cols-1 row-cols-sm-2  g-4  row-cols-md-2 g-4   row-cols-xl-4  g-4">
      
-                     {/*    {
-                items.map(product =>    <ProductCard2 key={product.articleNumber} item={product} />)
+                     {
+                items.map(product =>    <MobileGridCard key={product.articleNumber} item={product} />)
 
               }
-            */}
+          
        
   </div>
   </div> 
@@ -65,7 +66,7 @@ const SpecialOffer2 = ({items = []}) => {
                               <div className="products-grid-wrapper">
         
                               {
-                items.map(product =>    <ProductCard2 key={product.articleNumber} item={product} />)
+                items.map(product =>    <ProductCard key={product.articleNumber} item={product} />)
 
               }
            
@@ -75,7 +76,7 @@ const SpecialOffer2 = ({items = []}) => {
                                 
                       <div className="item-2">
                         <h2>2 FOR USD $29</h2>
-                        <WhiteButton link="/productdetails" text="SHOP NOW!"  />  
+                        <WhiteButton link="/products" text="SHOP NOW!"  />  
                       </div>
                       
                 

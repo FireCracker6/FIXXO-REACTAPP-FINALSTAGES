@@ -2,8 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 
 
-// This is original code by Leah
-export const QuantityButton = () => {
+// This is original code by Leah Saxe
+export const QuantityButton = ({number}) => {
    const [count, setCount] =  useState((countInitial) => {
     return 1
    })
@@ -36,7 +36,11 @@ export const QuantityButton = () => {
         break
        
     }
+      function countNumber ({count}) {
+        console.log(count)
+        return count
        
+      }
         
  
    

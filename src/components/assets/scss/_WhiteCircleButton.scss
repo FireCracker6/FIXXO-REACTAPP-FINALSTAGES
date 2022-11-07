@@ -110,6 +110,13 @@
     display: none;
 
 }
+button.__btn-background {
+    border:none !important;
+  
+}
+button.__btn-background i {
+    margin-bottom: 0.7rem;
+}
 
 
 @media (min-width: 992px) {

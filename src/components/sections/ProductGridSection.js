@@ -1,10 +1,10 @@
 import React  from 'react'
-import MobileGridCard from '../MobileGridCard';
+import MobileGridCard from '../cards/MobileGridCard';
 
 
 
 
-import ProductCard2 from '../ProductCard2';
+import ProductCard from '../cards/ProductCard';
 
 
 
@@ -49,7 +49,7 @@ const ProductGridSection = ({title, items = []}) => {
     
               <div className="product-gallery-grid"> 
               {
-                  items.map(product =>    <ProductCard2 key={product.articleNumber} item={product} />)
+                  items.map(product =>    <ProductCard key={product.articleNumber} item={product} />)
 
               }
            

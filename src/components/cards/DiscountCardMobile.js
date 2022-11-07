@@ -1,7 +1,11 @@
 import React from 'react'
-import pinquin from './assets/images/featured-product/pinquin.png'
+import { useShoppingCart } from '../contexts/ShoppingCartContext'
+import { currencyFormatter } from '../utilities/currencyFormatter'
+
 
 function DiscountCardMobile({item}) {
+
+  const {incrementQuantity } = useShoppingCart()
 
   const addToWishList = (e) => {
     console.log(`added to wish list)`)
@@ -10,19 +14,17 @@ function DiscountCardMobile({item}) {
   const addToCompare = (e) => {
     console.log("added to compare")
   }
-  const addToCart = (e) => {
-    console.log("added to Cart")
-  }
+ 
   return (
     <div className="card mb-3 " >
     <div className="row g-0">
       <div className="col-md-4">
-      <img src={item.imageName}  alt="placeholder image" />
+      <img src={item.imageName}  alt={item.name}/>
       </div>
       <ul className="card-menu ">
         <li><button onClick={addToWishList} className='productButton'><i className="fa-light fa-heart "></i></button></li>
         <li><button onClick={addToCompare}  className='productButton' ><i className="fa-light fa-code-compare fa-flip-vertical"></i></button></li>
-        <li><button onClick={addToCart} className='productButton'><i className="fa-light fa-bag-shopping"></i></button></li>
+        <li><button onClick={() => incrementQuantity({articleNumber: item.articleNumber, product: item})}  className='productButton'><i className="fa-light fa-bag-shopping"></i></button></li>
         </ul>
       <div className="col-md-8">
         <div className="card-body">
@@ -38,7 +40,7 @@ function DiscountCardMobile({item}) {
             
               <div className="price">
                 
-                <p className="new-price">{item.price}</p>
+                <p className="new-price">{currencyFormatter(item.price)}</p>
             </div>
         </div>
       </div>

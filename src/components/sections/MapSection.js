@@ -1,6 +1,6 @@
 import React from 'react'
 
- const MapSection2 = () => {
+ const MapSection = () => {
   return (
    
 
@@ -21,4 +21,4 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4842.785918502416!2d1
   )
 
 }
-export default MapSection2
+export default MapSection

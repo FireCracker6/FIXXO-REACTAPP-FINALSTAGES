@@ -10,7 +10,7 @@ const DiscountBanner = ({title}) => {
         <h2>{title}</h2>
         <h3>Women's, Men's & Kids' Winter Fashion</h3>
          
-        <WhiteButton link="/productdetails"  text="FLASH SALE" />
+        <WhiteButton link="/products"  text="FLASH SALE" />
     </div>
     </div>
     </div>

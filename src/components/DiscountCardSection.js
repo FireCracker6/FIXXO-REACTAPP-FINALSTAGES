@@ -1,7 +1,7 @@
 import React, {useContext } from 'react'
 import { DiscountProductsContext } from './contexts/contexts';
 
-import DiscountCardMobile from './DiscountCardMobile'
+import DiscountCardMobile from '../components/cards/DiscountCardMobile'
 
 
 const DiscountCard2 = ( {items = []}) => {
@@ -17,9 +17,7 @@ const DiscountCard2 = ( {items = []}) => {
       <div className="grid-wrapper row row-cols-2 row-cols-sm-2  row-cols-md-2 row-cols-xl-3 g-4 ">
       <div className="item-1">
         <h4>Latest Product</h4>
-     {/*   <DiscountCardMobile />
-       <DiscountCardMobile />
-       <DiscountCardMobile /> */}
+  
        {
 
           items.map(product =>    <DiscountCardMobile key={product.articleNumber} item={product} />)

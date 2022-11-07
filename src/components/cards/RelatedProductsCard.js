@@ -1,9 +1,11 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useShoppingCart } from '../contexts/ShoppingCartContext'
 
 import { NavLink } from 'react-router-dom'
 
-const ProductCard2 = ({item}) => {
+const RelatedProductsCard = ({item}) => {
+
+  const {incrementQuantity } = useShoppingCart()
 
   const addToWishList = (e) => {
     console.log(`added to wish list)`)
@@ -11,9 +13,6 @@ const ProductCard2 = ({item}) => {
 
   const addToCompare = (e) => {
     console.log("added to compare")
-  }
-  const addToCart = (e) => {
-    console.log("added to Cart")
   }
 
   return (
@@ -29,7 +28,7 @@ const ProductCard2 = ({item}) => {
                   <li><button onClick={addToWishList} className='productButton'><i className="fa-light fa-heart "></i></button></li>
                
                       <li><button  onClick={addToCompare} className='productButton' ><i className="fa-light fa-code-compare fa-flip-vertical"></i></button></li>
-                      <li><button onClick={addToCart}  className='productButton'><i className="fa-light fa-bag-shopping"></i></button></li>
+                      <li><button onClick={() => incrementQuantity({articleNumber: item.articleNumber, product: item})}  className='productButton'><i className="fa-light fa-bag-shopping"></i></button></li>
                   </ul>
               
                <div className="quickview-buttons"> <NavLink  to={`/productdetails/${item.articleNumber}`} className="quickview-button quick-btn-border">QUICK VIEW</NavLink>
@@ -63,4 +62,4 @@ const ProductCard2 = ({item}) => {
   )
 }
 
-export default ProductCard2
+export default RelatedProductsCard

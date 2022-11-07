@@ -1,25 +1,15 @@
 import React from 'react'
-import MobileGridCard from './MobileGridCard'
-import ProductCard2 from './ProductCard2'
-import { useContext, useState, useEffect } from 'react';
-import {ProductContext} from './contexts/contexts'
-import RelatedProductsCard from './RelatedProductsCard';
-import { useParams } from 'react-router-dom';
+
+
+
+import ProductCard from './cards/ProductCard';
+
 
 export const ProductDetailGalleryHeader = ({title, items = []}) => {
 
  
-  let [thisProduct, SetThisProduct] = useState({})
 
-
-  useEffect(() => {
-    const fetchData = async () => {
-        const result = await fetch(`https://win22-webapi.azurewebsites.net/api/products/`)
-      SetThisProduct(await result.json())
-    }
-    fetchData()
-}, [])
-
+  
 
     const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 1200;
@@ -54,7 +44,7 @@ export const ProductDetailGalleryHeader = ({title, items = []}) => {
 
         
      {
-                items.map(product =>    <RelatedProductsCard key={product.id} item={product} />)
+                items.map(product =>    <ProductCard key={product.articleNumber} item={product} />)
 
               }
            
@@ -85,7 +75,7 @@ export const ProductDetailGalleryHeader = ({title, items = []}) => {
 
     
     {
-                items.map(product =>    <RelatedProductsCard key={product.articleNumber} item={product} />)
+                items.map(product =>    <ProductCard key={product.articleNumber} item={product} />)
 
               }
     </div>
