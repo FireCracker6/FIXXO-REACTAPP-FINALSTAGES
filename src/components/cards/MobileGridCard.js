@@ -80,7 +80,7 @@ const MobileGridCard = ({item}) => {
   
 
        
-           {/*  <div className="col"> */}
+        
             <div className="card">
             
                 <div className="featured-image"><img src={item.imageName} alt={item.name} />
@@ -118,8 +118,7 @@ const MobileGridCard = ({item}) => {
 
         </div>
 
-{/* </div> */}
-{/* </div> */}
+
 </section>;
 
 

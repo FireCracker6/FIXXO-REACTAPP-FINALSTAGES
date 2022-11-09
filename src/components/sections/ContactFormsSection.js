@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { submitData, validate } from './scrips/submitAndValidation'
+import { submitData, validate } from '../scrips/submitAndValidation'
 function ContactFormsSection() {
 
     let currentPage = "Contact Us"

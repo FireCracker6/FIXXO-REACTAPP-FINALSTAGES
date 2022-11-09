@@ -19,9 +19,9 @@ export const ShoppingCartItem = ({item}) => {
              <div className='item-info-quantity-box'>
              <div className="item-info-quantity">
 
-                    <button onClick={()=> decrementQuantity(item)}><i className="fa-light fa-minus"></i></button>    
-                        <span className='number'>  {item.quantity}</span>  
-                    <button onClick={() => incrementQuantity(item)}><i className="fa-light fa-plus"></i></button>
+                    <button title='decrement' onClick={()=> decrementQuantity(item)}><i className="fa-light fa-minus"></i></button>    
+                        <span className='number' data-testid="count">  {item.quantity}</span>  
+                    <button title='increment'  onClick={() => incrementQuantity(item)}><i className="fa-light fa-plus"></i></button>
                   
                 </div>
              </div>

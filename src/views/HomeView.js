@@ -4,7 +4,7 @@ import '../App.min.css';
 
 import DiscountBanner from '../components/DiscountBanner';
 import Footer from '../components/Footer';
-import HomeFooter from '../components/HomeFooter';
+import HomeFooter from '../components/sections/HomeFooter';
 import PamelaReif from '../components/PamelaReif';
 import ProductsBanner from '../components/ProductsBanner';
 import Showcase from '../components/Showcase';
@@ -16,6 +16,7 @@ import ProductGridSection from '../components/sections/ProductGridSection';
 import DiscountCard2 from '../components/DiscountCardSection';
 import { useEffect } from 'react';
 import { useProductContext } from '../components/contexts/ProductContext';
+import { QuantityButton } from '../components/QuantityButton';
 
 
 
@@ -36,7 +37,7 @@ const HomeView = () => {
   useEffect(() => {
     getFeaturedProducts(4)
     getDiscountProducts(3)
-  }, [])
+  }, [getFeaturedProducts], [getDiscountProducts], [])
 
 
  
@@ -44,21 +45,18 @@ const HomeView = () => {
     <>
 
 
-       <NavbarGlobal />
-    
-   
-   <Showcase />
-    <ProductsBanner />
- 
-  <ProductGridSection title="Featured Products" items={featuredProducts} /> 
-   <PamelaReif />
-   <Specialty title={"Our Specialty"} />
-  <SpecialOffer1  items={featuredProducts} />
-   <SpecialOffer2  items={featuredProducts}  />  
-   <DiscountBanner title={"Up to 70% off*"} />
-   <DiscountCard2 items={discountProducts}/>
-   <HomeFooter />
-   <Footer />
+        <NavbarGlobal />
+        <Showcase />
+        <ProductsBanner />
+        <ProductGridSection title="Featured Products" items={featuredProducts} /> 
+        <PamelaReif />
+        <Specialty title={"Our Specialty"} />
+        <SpecialOffer1  items={featuredProducts} />
+        <SpecialOffer2  items={featuredProducts}  />  
+        <DiscountBanner title={"Up to 70% off*"} />
+        <DiscountCard2 items={discountProducts}/>
+        <HomeFooter />
+        <Footer />
 
     </>
   )

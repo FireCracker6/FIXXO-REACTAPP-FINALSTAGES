@@ -3,7 +3,7 @@ import React from 'react'
 
 
 
-import ContactFormsSection from './ContactFormsSection'
+import ContactFormsSection from './sections/ContactFormsSection'
 import './sections/MapSection'
 import MapSection2 from './sections/MapSection'
 import BreadCrumbSections from '../components/sections/BreadCrumbsSections'

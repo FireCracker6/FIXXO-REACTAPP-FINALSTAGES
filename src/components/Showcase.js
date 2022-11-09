@@ -1,6 +1,6 @@
 import React from 'react'
-import pLeft from './assets/images/PLeft.png'
-import pRight from './assets/images/PRight.png'
+import pLeft from './assets/images/showcase-img-1.png'
+import pRight from './assets/images/showcase-img-2.png'
 import ShowcaseBanner from './ShowcaseBanner'
 
 const Showcase = () => {

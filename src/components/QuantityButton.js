@@ -8,7 +8,8 @@ export const QuantityButton = ({number}) => {
     return 1
    })
 
-   
+   console.log(count)
+
     function decrementCount() {
         setCount(prevCount =>
             prevCount - 1)
@@ -49,9 +50,9 @@ export const QuantityButton = ({number}) => {
    
    <>
    <div className='quantity-group'>
-   <button className='qbtn' onClick={decrementCount} ><i className="fa-regular fa-minus"></i></button>
-   <input type="text" className='q-text' value={count} disabled/>  
-   <button className='qbtn'   onClick={incrementCount}><i className="fa-regular fa-plus"></i></button>
+   <button className='qbtn' title='decrement' onClick={decrementCount} ><i className="fa-regular fa-minus"></i></button>
+   <input type="text" className='q-text' data-testid="count" value={count} disabled/>  
+   <button className='qbtn' title='increment'  onClick={incrementCount}><i className="fa-regular fa-plus"></i></button>
    </div>
 
    

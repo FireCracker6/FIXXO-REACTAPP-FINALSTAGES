@@ -1,8 +1,7 @@
 import React from 'react'
-import customerService from './assets/images/icons/customer-service.svg'
-import deliveryTruck from './assets/images/icons/delivery-truck.svg'
-import securePayment from './assets/images/icons/secure-payment.svg'
-import CustomerServiceIcons from './CustomerServiceIcons'
+import customerService from '../assets/images/icons/customer-service.svg'
+import deliveryTruck from '../assets/images/icons/delivery-truck.svg'
+import securePayment from '../assets/images/icons/secure-payment.svg'
 import { NavLink } from 'react-router-dom'
 
 var imgArray = new Array();

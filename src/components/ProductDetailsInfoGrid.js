@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { ProductDetailsImages } from './ProductDetailsImages'
 import { QuantityButton } from './QuantityButton'
 import { DetailInfoProduct } from './DetailInfoProduct'
-import { useEffect } from 'react';
+import {  useEffect } from 'react';
 import { useProductContext } from './contexts/ProductContext'
 import { useShoppingCart } from './contexts/ShoppingCartContext'
 import { currencyFormatter } from './utilities/currencyFormatter'
@@ -17,7 +17,7 @@ export const ProductDetailsInfoGrid = ({count}) => {
    
   
 
-  
+ 
 
     const {product, getProduct} = useProductContext()
   const {featuredProducts, getFeaturedProducts} = useProductContext();
@@ -110,7 +110,7 @@ export const ProductDetailsInfoGrid = ({count}) => {
   
                      
                 </div>
-                <div className="cart-red-buttons "><button   onClick={() => incrementQuantity({articleNumber: product.articleNumber, product: product}  )} className="post-button">Add To Cart</button>
+                <div className="cart-red-buttons "><button   onClick={() => incrementQuantity({articleNumber: product.articleNumber, product: product }  )} className="post-button">Add To Cart</button>
                     </div> 
             </div>
        

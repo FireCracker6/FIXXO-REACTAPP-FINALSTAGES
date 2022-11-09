@@ -638,6 +638,8 @@ button.__btn-background i {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
 }
 .__showcase .container-fluid .showcase-Grid .fr-1 {
   height: auto;
@@ -2711,7 +2713,7 @@ a.quickview-button:hover {
           justify-content: center;
   text-align: center;
   max-width: 180px;
-  border: 1px solid black !important;
+  border: none !important;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2812,7 +2814,7 @@ a.quickview-button:hover {
   }
   .disc-card .card {
     max-width: 400px;
-    border: 1px solid black !important;
+    border: none !important;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2882,7 +2884,7 @@ a.quickview-button:hover {
   }
   .disc-card .card {
     width: 1000px;
-    border: 1px solid black !important;
+    border: none !important;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2893,7 +2895,7 @@ a.quickview-button:hover {
        object-fit: cover;
   }
   .disc-card .card .card-body {
-    border: 1px solid black;
+    border: none !important;
   }
   .disc-card .card .card-menu {
     display: block;
