@@ -110,7 +110,7 @@ export const ProductDetailsInfoGrid = ({count}) => {
   
                      
                 </div>
-                <div className="cart-red-buttons "><button   onClick={() => incrementQuantity({articleNumber: product.articleNumber, product: product }  )} className="post-button">Add To Cart</button>
+                <div className="cart-red-buttons "><button  id='increment' onClick={() => incrementQuantity({articleNumber: product.articleNumber, product: product }  )} className="post-button">Add To Cart</button>
                     </div> 
             </div>
        
