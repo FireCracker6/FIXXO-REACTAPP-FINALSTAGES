@@ -267,10 +267,7 @@
                         border-radius: 0 !important;
                         display: flex;
             
-                        /* &:hover {
-                            background-color: #737272;
-                        
-                        }    */
+                       
                         .glyphicon {
                             font-size: 1rem;
                         }  
@@ -524,16 +521,13 @@
                             font-size:0.9rem;
                             font-family: $font-poppins;
                             font-weight: $font-weight-regular;
-                          /*   margin-right: 50px; */
+                       
                         }
     
                         .quantity-group {
                             border-radius: 0 !important;
                 
-                            /* &:hover {
-                                background-color: #737272;
-                            
-                            }    */
+                        
                             .glyphicon {
                                 font-size: 1rem;
                             }  
@@ -582,8 +576,7 @@
             justify-content: space-between;
             max-width: 1110px;
             align-items: flex-start;
-           /*  grid-template-columns: repeat (2, 1fr);
-            grid-template-rows: 1fr; */
+     
 
 
             

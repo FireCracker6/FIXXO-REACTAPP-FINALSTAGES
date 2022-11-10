@@ -1,7 +1,7 @@
 import React from 'react'
-import WhiteButton from './WhiteButton'
-import ProductCard from './cards/ProductCard'
-import MobileGridCard from './cards/MobileGridCard'
+import WhiteButton from '../buttons/WhiteButton'
+import ProductCard from '../cards/ProductCard'
+import MobileGridCard from '../cards/MobileGridCard'
 
 const SpecialOffer2 = ({items = []}) => {
 

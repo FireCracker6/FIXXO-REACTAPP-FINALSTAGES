@@ -8,7 +8,7 @@ const BreadCrumbsSections = ({currentPage}) => {
   return (
     <>
     
-      {/*   Breadcrumbs section  */}
+    
       <section className="breadcrumbs-section">
 
         
@@ -19,7 +19,7 @@ const BreadCrumbsSections = ({currentPage}) => {
                 <ul className="breadcrumb">
                     <li>
                     
-                        <NavLink to="/"><img src={metroHome} /> Home</NavLink>
+                        <NavLink to="/"><img src={metroHome} alt="home icon"/> Home</NavLink>
                         </li>
                      
                    

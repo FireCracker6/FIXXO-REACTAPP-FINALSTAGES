@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import WhiteButton from './WhiteButton'
-import BlackButton from './BlackButton'
+import WhiteButton from './buttons/WhiteButton'
+import BlackButton from './buttons/BlackButton'
 function PamelaReif(props) {
   return (
     // <!-- Pamela Reifs section -->

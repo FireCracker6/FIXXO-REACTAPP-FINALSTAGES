@@ -1,16 +1,11 @@
 import React from 'react'
-
-
-
 import ProductCard from './cards/ProductCard';
 
 
 export const ProductDetailGalleryHeader = ({title, items = []}) => {
 
- 
 
   
-
     const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 1200;
 

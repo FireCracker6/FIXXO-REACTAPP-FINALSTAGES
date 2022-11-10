@@ -2,7 +2,7 @@ import React from 'react'
 import DiscountCard from './DiscountCard'
 
 
-
+// using a loop of three cards in every grid column
 const dcard = [    <DiscountCard />,     <DiscountCard />,     <DiscountCard />];
 const items = [];
 
@@ -66,32 +66,7 @@ const ProductSpinner = () => {
               </div>
               </div>
               </section>;
-  return (
-/*   section product spinner  */
-    <section className="product-spinner">
-        <div className="container">
-            <div className="product-spinner-grid">
-                <div className="header"> <h2>Latest Product</h2></div> 
-
-                  {items}
-
-                 
-              
-             
-                <div className="header"><h2>Best Selling Product</h2></div>
-                
-                {items}
-
-            
-                <div className="header"><h2>Top Rated Product</h2></div>
-                
-               {items}
-             
-               
-                </div>
-                </div>
-                </section>
-  )
+ 
 }
 
 export default ProductSpinner

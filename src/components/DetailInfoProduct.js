@@ -1,7 +1,7 @@
 import React from 'react'
 import { ProductDetailInfoText } from './sections/ProductDetailInfoText';
 
-
+// using a bootstrap nav-tabs element for this naviation.
 
 export const DetailInfoProduct = () => {
  

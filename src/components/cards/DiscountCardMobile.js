@@ -2,7 +2,7 @@ import React from 'react'
 import { useShoppingCart } from '../contexts/ShoppingCartContext'
 import { currencyFormatter } from '../utilities/currencyFormatter'
 
-
+// This card goes for the end section on the home page
 function DiscountCardMobile({item}) {
 
   const {incrementQuantity } = useShoppingCart()

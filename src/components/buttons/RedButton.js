@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const RedButton = ({link, text}) => {
   return (
-    // <div><a href="#" className="mobile-red-button btn-mobile-border">SHOP NOW!</a> </div>
+
 
     <div className='buttons'>
 

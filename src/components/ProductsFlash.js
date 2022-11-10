@@ -1,5 +1,5 @@
 import React from 'react'
-import BlackButton from './BlackButton'
+import BlackButton from './buttons/BlackButton'
 
 function ProductsFlash() {
   return (

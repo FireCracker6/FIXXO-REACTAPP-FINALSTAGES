@@ -1,5 +1,5 @@
 import React from 'react';
-import placeHolder from './assets/images/specialty-img-bg.svg'
+import placeHolder from '../assets/images/specialty-img-bg.svg'
 
 const Specialty = ({title}) => {
   return (
@@ -7,15 +7,7 @@ const Specialty = ({title}) => {
   
     <div className="container">
       
-        {/* <div className="specialty-header">
-    
-            <div className="section-title">
-                <h1>Our Specialty</h1>
-              
-              
-              </div>
-        </div> */}
-
+      
           <div className="specialty-items">
           <div className="specialty-header">
     

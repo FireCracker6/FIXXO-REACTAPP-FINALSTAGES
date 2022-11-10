@@ -1,5 +1,5 @@
 import React from 'react';
-import WhiteCircleButton from './WhiteCircleButton';
+import WhiteCircleButton from './buttons/WhiteCircleButton';
 
 
 function CustomerLinks() {

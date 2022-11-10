@@ -1,12 +1,12 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { ProductDetailsImages } from './ProductDetailsImages'
-import { QuantityButton } from './QuantityButton'
-import { DetailInfoProduct } from './DetailInfoProduct'
+import { ProductDetailsImages } from '../ProductDetailsImages'
+import { QuantityButton } from '../buttons/QuantityButton'
+import { DetailInfoProduct } from '../DetailInfoProduct'
 import {  useEffect } from 'react';
-import { useProductContext } from './contexts/ProductContext'
-import { useShoppingCart } from './contexts/ShoppingCartContext'
-import { currencyFormatter } from './utilities/currencyFormatter'
+import { useProductContext } from '../contexts/ProductContext'
+import { useShoppingCart } from '../contexts/ShoppingCartContext'
+import { currencyFormatter } from '../utilities/currencyFormatter'
 
 
 

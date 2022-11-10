@@ -1,5 +1,5 @@
 import React from 'react'
-import WhiteButton from './WhiteButton'
+import WhiteButton from './buttons/WhiteButton'
 
 const DiscountBanner = ({title}) => {
   return (

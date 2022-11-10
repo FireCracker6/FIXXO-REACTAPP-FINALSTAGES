@@ -1,31 +1,21 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import NavbarGlobal from '../components/NavbarGlobal'
 import Footer from '../components/Footer'
 import ProductGridSection from '../components/sections/ProductGridSection'
 import BreadCrumbsSections from '../components/sections/BreadCrumbsSections'
-import {ProductsContext} from '../components/contexts/contexts'
+
 import { useProductContext } from '../components/contexts/ProductContext'
 
 export const ProductsView = ({title }) => {
 
+  window.top.document.title = "Products | Fixxo."
   const {products, getProducts} = useProductContext()
 
   useEffect(() => {
     getProducts()
-  },[])
+  },[getProducts])
   
-/*   const productContext = useContext(ProductsContext)
 
-  const [thisProduct, SetThisProduct] = useState({})
-
-  useEffect(() => {
-    const fetchData = async () => {
-        const result = await fetch(`https://win22-webapi.azurewebsites.net/api/products/`) 
-        SetThisProduct(await result.json())
-    }
-    fetchData()
-}, [])
- */
   return (
     <div>
     <NavbarGlobal />

@@ -3,10 +3,10 @@ import React from 'react'
 
 
 
-import ContactFormsSection from './sections/ContactFormsSection'
-import './sections/MapSection'
-import MapSection2 from './sections/MapSection'
-import BreadCrumbSections from '../components/sections/BreadCrumbsSections'
+import ContactFormsSection from './ContactFormsSection'
+import './MapSection'
+import MapSection2 from './MapSection'
+import BreadCrumbSections from './BreadCrumbsSections'
 
 
 function Contacts() {

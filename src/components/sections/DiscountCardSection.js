@@ -1,7 +1,7 @@
 import React, {useContext } from 'react'
-import { DiscountProductsContext } from './contexts/contexts';
+import { DiscountProductsContext } from '../contexts/contexts';
 
-import DiscountCardMobile from '../components/cards/DiscountCardMobile'
+import DiscountCardMobile from '../cards/DiscountCardMobile'
 
 
 const DiscountCard2 = ( {items = []}) => {
@@ -11,8 +11,6 @@ const DiscountCard2 = ( {items = []}) => {
     <section className="disc-card container">
    
 
-{/*      
-      <div className=" row row-cols-2 row-cols-sm-1  row-cols-md-2  row-cols-xl-3 g-4 "> */}
         
       <div className="grid-wrapper row row-cols-2 row-cols-sm-2  row-cols-md-2 row-cols-xl-3 g-4 ">
       <div className="item-1">

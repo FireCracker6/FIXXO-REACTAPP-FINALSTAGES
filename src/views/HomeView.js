@@ -8,15 +8,15 @@ import HomeFooter from '../components/sections/HomeFooter';
 import PamelaReif from '../components/PamelaReif';
 import ProductsBanner from '../components/ProductsBanner';
 import Showcase from '../components/Showcase';
-import SpecialOffer1 from '../components/SpecialOffer1';
-import SpecialOffer2 from '../components/SpecialOffer2';
-import Specialty from '../components/Specialty';
+import SpecialOffer1 from '../components/sections/SpecialOffer1';
+import SpecialOffer2 from '../components/sections/SpecialOffer2';
+import Specialty from '../components/sections/Specialty';
 import NavbarGlobal from '../components/NavbarGlobal';
 import ProductGridSection from '../components/sections/ProductGridSection';
-import DiscountCard2 from '../components/DiscountCardSection';
+import DiscountCard2 from '../components/sections/DiscountCardSection';
 import { useEffect } from 'react';
 import { useProductContext } from '../components/contexts/ProductContext';
-import { QuantityButton } from '../components/QuantityButton';
+
 
 
 

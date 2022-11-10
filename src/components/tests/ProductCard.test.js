@@ -5,7 +5,7 @@ import { ShoppingCartProdivder, useShoppingCart } from '../contexts/ShoppingCart
 describe(ProductCard, () => {
 
     it('incrementQuantity should have initial value of 0',  () => {
-  
+//   this is probably not the right way to do it, but could not get it to work otherwise.
      const imageName = null
        if (imageName == undefined)
        return Promise.resolve({

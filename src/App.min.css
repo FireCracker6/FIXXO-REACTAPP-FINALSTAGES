@@ -7,7 +7,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap");
 .fr-1 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -161,11 +160,9 @@ a.logoType:hover {
   }
 }
 .container {
-  /*  max-width: 1110px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*   justify-content: space-between; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -175,7 +172,6 @@ a.logoType:hover {
 }
 
 .container-fluid {
-  /*  max-width: 1110px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,7 +258,6 @@ body {
 
 .__navbar {
   height: 49px;
-  /*   border: 1px solid black; */
   background-color: transparent;
   position: fixed;
   top: 0;
@@ -318,7 +313,6 @@ body {
   font-size: 1rem;
   font-weight: 600;
   color: #080C24;
-  /*   border: 1px solid black; */
 }
 .__ulinks a {
   font-weight: 600;
@@ -626,12 +620,10 @@ button.__btn-background i {
           align-items: center;
 }
 .__showcase .container-fluid .showcase-Grid {
-  /*  border: 1px solid black; */
   display: grid;
   width: 1680px;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
-  /*  background-color: red ; */
 }
 .__showcase .container-fluid .showcase-Grid img {
   width: 100%;
@@ -959,7 +951,6 @@ a.__btn-background.active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*  padding-bottom: 30px; */
   position: relative;
 }
 .item.item-2 .prod-text {
@@ -1084,7 +1075,6 @@ a.__btn-background.active {
   }
 }
 /* @import "../breakpoints"; */
-/* @import "../breakpoints"; */
 /* Pamela Reifs picks banner */
 .pamela-banner {
   margin-top: 20px;
@@ -1129,7 +1119,7 @@ a.__btn-background.active {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background-color: #75695C;
-  background-image: url(/src/images/Pamela-bg.png);
+  background-image: url(/src/components/assets/images/Pamela-bg.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1174,7 +1164,7 @@ a.__btn-background.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(/src/images/Conscious-bg.png);
+  background-image: url(/src/components/assets/images/Conscious-bg.png);
   background-color: #D9D9D9;
   background-size: contain;
   background-position: center;
@@ -1292,7 +1282,7 @@ a.__btn-background.active {
   }
   .pamela-flash > .item-2 {
     display: block;
-    background-image: url(/src/images/Conscious-bg.png);
+    background-image: url(/src/components/assets/images/Conscious-bg.png);
     background-color: #D9D9D9;
     background-size: contain;
     background-position-x: 386px;
@@ -1425,7 +1415,6 @@ a.__btn-background.active {
 .specialty-items > .__item-1 .text, .__item-2 .text, .__item-3 .text {
   background-color: white;
   width: 100%;
-  /* padding: 5.25rem 0 4rem 2rem; */
   padding: 4rem 0 4rem 0.5rem;
   font-size: 1.25rem;
   color: #080C24;
@@ -1942,10 +1931,6 @@ a.quickview-button:hover {
   }
   .product-gallery-grid {
     display: grid;
-    /*  grid-template-columns: repeat(4, 1fr); */
-    /*     max-width: 1115px; */
-    /*   column-gap: 1.875rem;
-      row-gap: 1.4375rem; */
     overflow: hidden;
   }
   .product-gallery-grid .card {
@@ -2307,7 +2292,6 @@ a.quickview-button:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  /*    padding-right: 30px; */
 }
 .special-offer-1 .item-2 .products-grid-wrapper {
   display: inline-block;
@@ -2372,7 +2356,6 @@ a.quickview-button:hover {
        -moz-column-gap: 2rem;
             column-gap: 2rem;
     width: auto;
-    /*   margin-left: 30px; */
   }
   .special-offer-1 .item-2 .products-grid-wrapper .product-grid .quickview-buttons .quickview-button {
     width: 300px;
@@ -3199,10 +3182,6 @@ a.quickview-button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* &:hover {
-      background-color: #737272;
-
-  }    */
 }
 .product-detail-section > .container .product-detail-description .prod-desc-2 .item-3 .quantity .quantity-group .glyphicon {
   font-size: 1rem;
@@ -3435,14 +3414,9 @@ a.quickview-button:hover {
     font-size: 0.9rem;
     font-family: "Poppin", sans-serif;
     font-weight: 400;
-    /*   margin-right: 50px; */
   }
   .product-detail-section > .container .product-detail-description .prod-desc-2 .item-3 .quantity .quantity-group {
     border-radius: 0 !important;
-    /* &:hover {
-        background-color: #737272;
-
-    }    */
   }
   .product-detail-section > .container .product-detail-description .prod-desc-2 .item-3 .quantity .quantity-group .glyphicon {
     font-size: 1rem;
@@ -3483,8 +3457,6 @@ a.quickview-button:hover {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    /*  grid-template-columns: repeat (2, 1fr);
-     grid-template-rows: 1fr; */
   }
   .product-detail-section > .container .grid-container {
     display: grid;
@@ -3749,7 +3721,6 @@ a.quickview-button:hover {
 }
 
 .forms-input > .container {
-  /*   max-width: 1110px; */
   display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -3801,7 +3772,6 @@ a.quickview-button:hover {
 .forms-input > .container form .item-1 input {
   padding: 0.8rem;
   width: 100%;
-  /*   margin-right: 10px; */
 }
 
 .forms-input > .container .header {
@@ -3976,7 +3946,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*    width: 100%; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

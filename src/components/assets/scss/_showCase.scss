@@ -13,13 +13,13 @@
         align-items: center;
 
         .showcase-Grid {
-           /*  border: 1px solid black; */
+        
             display: grid;
             width: 1680px;
             grid-template-columns: 1fr 1fr 1fr;
-          place-items: center;
+            place-items: center;
 
-         /*  background-color: red ; */
+      
 
                 img {
                     width: 100%;

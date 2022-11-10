@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar } from 'react-bootstrap'
-import Contacts from '../components/Contacts';
+import Contacts from '../components/sections/Contacts';
 import Footer from '../components/Footer'
 import NavbarGlobal from '../components/NavbarGlobal';
 

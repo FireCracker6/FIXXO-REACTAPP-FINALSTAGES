@@ -1,6 +1,6 @@
 import React from 'react'
-import { useShoppingCart } from './contexts/ShoppingCartContext';
-import MainMenuIcon from './MainMenuIcon';
+import { useShoppingCart } from '../contexts/ShoppingCartContext';
+import MainMenuIcon from '../icons/MainMenuIcon';
 
 function WhiteCircleButton() {
 

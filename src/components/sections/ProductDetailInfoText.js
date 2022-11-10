@@ -1,5 +1,5 @@
 import React from 'react'
-
+// a mockup for the product details info text. Placeholder for db info text.
 export const ProductDetailInfoText = () => {
   return (
     <>

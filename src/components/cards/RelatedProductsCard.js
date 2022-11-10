@@ -2,7 +2,7 @@ import React from 'react'
 import { useShoppingCart } from '../contexts/ShoppingCartContext'
 
 import { NavLink } from 'react-router-dom'
-
+// this card is a plain copy of Productcard, but used in case of changes.
 const RelatedProductsCard = ({item}) => {
 
   const {incrementQuantity } = useShoppingCart()

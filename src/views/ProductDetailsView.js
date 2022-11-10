@@ -3,7 +3,7 @@ import NavbarGlobal from '../components/NavbarGlobal'
 import Footer from '../components/Footer'
 import TopBannerDiscount from '../components/TopBannerDiscount'
 import BreadCrumbsSections from '../components/sections/BreadCrumbsSections'
-import { ProductDetailsInfoGrid } from '../components/ProductDetailsInfoGrid'
+import { ProductDetailsInfoGrid } from '../components/sections/ProductDetailsInfoGrid'
 import { ProductDetailGalleryHeader } from '../components/ProductDetailGalleryHeader'
 
 

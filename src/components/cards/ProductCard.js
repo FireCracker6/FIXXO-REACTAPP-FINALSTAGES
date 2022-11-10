@@ -1,13 +1,11 @@
 import React from 'react'
-
-
 import { NavLink } from 'react-router-dom'
 import { useShoppingCart } from '../contexts/ShoppingCartContext'
 import { currencyFormatter } from '../utilities/currencyFormatter'
 
 const ProductCard = ({item}) => {
 
-
+// increments quantity in the shopping bag when user klicks the icon.
   const {incrementQuantity } = useShoppingCart()
  
    const addToWishList = (e) => {

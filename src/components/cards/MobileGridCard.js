@@ -1,8 +1,9 @@
 import React from 'react'
 import { useShoppingCart } from '../contexts/ShoppingCartContext'
 import { currencyFormatter } from '../utilities/currencyFormatter'
-
 import { NavLink } from 'react-router-dom'
+
+// This card kicks in on the mobile section. There could be a more efficient way to do this, but it was built like this, this time.
 
 const MobileGridCard = ({item}) => {
 
