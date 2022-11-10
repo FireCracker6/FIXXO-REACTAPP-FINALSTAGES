@@ -1,5 +1,6 @@
 import React from 'react';
 import placeHolder from '../assets/images/specialty-img-bg.svg'
+import { NavLink } from 'react-bootstrap';
 
 const Specialty = ({title}) => {
   return (
@@ -20,7 +21,8 @@ const Specialty = ({title}) => {
         <div className="__item-1">
             <div className="text">
                 <h4>Track Your Order</h4>
-                <a href="#">Get Started{' >'}</a>
+                <NavLink to="/" end>Get Started{' >'}</NavLink>
+               
             </div>
            
             <div className="image-holder">  <img src={placeHolder} alt="placeholder" />  </div>
@@ -28,7 +30,8 @@ const Specialty = ({title}) => {
         <div className="__item-2">
             <div className="text">
                 <h4>Make a Return</h4>
-                <a href="#">Get Started {'>'}</a>
+                <NavLink to="/" end>Get Started{' >'}</NavLink>
+              
             </div>
            
             <div className="image-holder"> <img src={placeHolder} alt="placeholder" />    </div>
@@ -36,7 +39,8 @@ const Specialty = ({title}) => {
         <div className="__item-3">
             <div className="text">
                 <h4>Request a Price Adjustment</h4>
-                <a href="#">Get Started {'>'}</a>
+                <NavLink to="/" end>Get Started{' >'}</NavLink>
+             
             </div>
            
             <div className="image-holder">  <img src={placeHolder} alt="placeholder" />   </div>
