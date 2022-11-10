@@ -569,11 +569,11 @@ body {
   display: none;
 }
 
-.__btn-background:nth-child(1) {
+.__btn-background:nth-child(2) {
   display: none;
 }
 
-.__btn-background:nth-child(2) {
+.__btn-background:nth-child(3) {
   display: none;
 }
 
@@ -586,10 +586,10 @@ button.__btn-background i {
 }
 
 @media (min-width: 992px) {
-  .__btn-background:nth-of-type(1) {
+  .__btn-background:nth-of-type(2) {
     display: inline-block;
   }
-  .__btn-background:nth-of-type(2) {
+  .__btn-background:nth-of-type(3) {
     display: inline-block;
   }
 }
@@ -2002,8 +2002,6 @@ a.quickview-button:hover {
   }
   .product-grid .card > .card-body {
     text-align: center;
-    margin-left: 0;
-    padding-left: 0;
     width: 257px;
   }
   .product-grid .card > .card-body h5 {
@@ -2012,7 +2010,7 @@ a.quickview-button:hover {
     font-weight: 600;
     letter-spacing: 2px;
     color: #616365;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .product-grid .card > .card-body h4 {
     font-family: "Poppin", sans-serif;
