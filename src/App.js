@@ -22,19 +22,10 @@ import { ProductProvider } from './components/contexts/ProductContext';
 
 
 function App() {
-
-
-
-
-
-
-
  
   return (
 
    <>
-
-  
 
     <Router>
       <ShoppingCartProvider>

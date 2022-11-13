@@ -22,7 +22,7 @@ export const QuantityButton = ({number}) => {
             prevCount + 1)
         }
 
-        // quantity set to max 13 products minimum 1 product
+        // quantity set to max 13 products minimum 1 product // not implemented to shoppingcart function yet. 
         const initNumber = 1
         switch(count) {
           

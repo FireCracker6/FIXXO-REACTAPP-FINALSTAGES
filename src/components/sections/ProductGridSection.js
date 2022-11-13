@@ -11,10 +11,8 @@ import ProductCard from '../cards/ProductCard';
 const ProductGridSection = ({title, items = []}) => {
 
  
-  
-
-
-
+/* using useEffect to differ on the cards used for mobile or desktop. 
+This was done at an early phase of the project. Could possibly improve code by using one card only. //LS */
 
   const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 1200;
