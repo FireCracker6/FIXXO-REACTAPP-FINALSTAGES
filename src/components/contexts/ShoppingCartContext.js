@@ -11,7 +11,7 @@ export const useShoppingCart = () => {
     return useContext (ShoppingCartContext)
 }
 
-export const ShoppingCartProdivder = ({children} ) => {
+export const ShoppingCartProvider = ({children} ) => {
 
     const[cartItems, setCartItems] = useState([])
 

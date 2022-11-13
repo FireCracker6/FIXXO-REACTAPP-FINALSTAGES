@@ -49,7 +49,7 @@ export const ProductDetailsInfoGrid = ({count}) => {
 
         <div className="product-detail-description">
            <div className="prod-desc-1">
-            <h2>{product.name}</h2>
+            <h2 data-testid="pName" >{product.name}</h2>
          
             <p><small>SKU: 12345670 BRAND: The Northland</small></p>
             <div className="text-theme">
@@ -81,7 +81,7 @@ export const ProductDetailsInfoGrid = ({count}) => {
                 <div className="color">
                     <h2>Color: </h2>
                 </div>
-                <div className="CART-dropdown">
+                <div className="CART-dropdown" >
                     <button className="btn  dropdown border border-dark " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Choose an Option
                     <i className="fa-regular fa-chevron-down ms-5"></i>
@@ -110,7 +110,7 @@ export const ProductDetailsInfoGrid = ({count}) => {
   
                      
                 </div>
-                <div className="cart-red-buttons "><button  id='increment' onClick={() => incrementQuantity({articleNumber: product.articleNumber, product: product }  )} className="post-button">Add To Cart</button>
+                <div className="cart-red-buttons "><button onClick={() => incrementQuantity({articleNumber: product.articleNumber, product: product }  )} className="post-button">Add To Cart</button>
                     </div> 
             </div>
        

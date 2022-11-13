@@ -8,7 +8,7 @@ export const QuantityButton = ({number}) => {
     return 1
    })
 
-   console.log(count)
+
 
     function decrementCount() {
         setCount(prevCount =>

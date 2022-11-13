@@ -13,7 +13,7 @@ import SearchView from './views/SearchView';
 import CategoriesView from './views/CategoriesView';
 import { ProductsView } from './views/ProductsView';
 import { ProductDetailGalleryHeader } from './components/ProductDetailGalleryHeader';
-import { ShoppingCartProdivder } from './components/contexts/ShoppingCartContext';
+import { ShoppingCartProvider } from './components/contexts/ShoppingCartContext';
 import { ProductProvider } from './components/contexts/ProductContext';
 
 
@@ -37,7 +37,7 @@ function App() {
   
 
     <Router>
-      <ShoppingCartProdivder>
+      <ShoppingCartProvider>
         <ProductProvider>
     <Routes>
       <Route path='/' element={<HomeView/>}/>
@@ -54,7 +54,7 @@ function App() {
       <Route path='/compare' element={<CompareView />}/>
     </Routes>
     </ProductProvider>
-    </ShoppingCartProdivder>
+    </ShoppingCartProvider>
       
     </Router>
 
