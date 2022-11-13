@@ -2,7 +2,7 @@
 import {render, fireevent, getAllByText, getByTitle, fireEvent, waitFor } from '@testing-library/react'
 import { ShoppingCartProvider } from '../contexts/ShoppingCartContext';
 import {ProductDetailsInfoGrid} from '../sections/ProductDetailsInfoGrid';
-import { ProductProvider } from '../../components/contexts/ProductContext';
+import { ProductProvider } from '../contexts/ProductContext';
 
 import '@testing-library/jest-dom/extend-expect'
 

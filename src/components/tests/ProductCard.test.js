@@ -7,7 +7,8 @@ import '@testing-library/jest-dom/extend-expect'
 import ProductCard from '../cards/ProductCard'
 import {ShoppingCart} from '../ShoppingCart';
 
-// Kredit till klasskompis Per Stark här för att dela med sig av sin kod på Github, som jag sen fick manipulera en del.
+/*  Kredit till klasskompis Per Stark här för att dela med sig av sin kod på Github, 
+som jag sen fick manipulera och tillpasssse en del. */
 
 const mockProduct = { "articleNumber": "d3984cd9-f121-4981-8d03-83198d441379", "name": "Black coat", "description": "", "category": "Coats", "price": 95, "rating": 4, "imageName": "https://win22imgstorage.blob.core.windows.net/images/black-coat.png" }
 
@@ -33,7 +34,14 @@ describe(ProductCard, () => {
         }
         test("can display mockproduct properly", () => {
             const providerProps = mockProduct;
-            customRender(<ProductProvider><ProductCard item={mockProduct} /></ProductProvider>, { providerProps })
+            customRender(
+            
+            <ProductProvider>
+
+                <ProductCard item={mockProduct} />
+
+            </ProductProvider>, { providerProps })
+
             expect(screen.getByRole('img').alt).toContain(mockProduct.name);
     });
     test("can add product to shoppingcart from ProductCard", () => {
